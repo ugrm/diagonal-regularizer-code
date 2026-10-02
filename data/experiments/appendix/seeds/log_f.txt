@@ -1,0 +1,129 @@
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0036 | -0.013 | -0.005 | 74800 |
+| heavy_tail | 0.0159 | +4.352 | -0.020 | 74800 |
+| correlated | 0.0038 | -0.034 | +0.003 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0176
+
+two-sample KS correlated vs gaussian sample: 0.0036
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed0.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0027 | +0.010 | +0.010 | 74800 |
+| heavy_tail | 0.0162 | +2.213 | -0.041 | 74800 |
+| correlated | 0.0025 | +0.009 | +0.005 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0148
+
+two-sample KS correlated vs gaussian sample: 0.0037
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed1.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0024 | +0.007 | -0.001 | 74800 |
+| heavy_tail | 0.0161 | +3.818 | -0.078 | 74800 |
+| correlated | 0.0020 | -0.004 | -0.002 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0168
+
+two-sample KS correlated vs gaussian sample: 0.0036
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed2.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0030 | +0.000 | -0.007 | 74800 |
+| heavy_tail | 0.0149 | +0.994 | +0.015 | 74800 |
+| correlated | 0.0049 | +0.010 | -0.004 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0148
+
+two-sample KS correlated vs gaussian sample: 0.0070
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed3.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0033 | -0.020 | +0.003 | 74800 |
+| heavy_tail | 0.0153 | +2.183 | -0.023 | 74800 |
+| correlated | 0.0033 | +0.004 | -0.004 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0166
+
+two-sample KS correlated vs gaussian sample: 0.0056
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed4.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0022 | +0.014 | +0.003 | 74800 |
+| heavy_tail | 0.0144 | +3.247 | -0.021 | 74800 |
+| correlated | 0.0033 | +0.017 | -0.015 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0148
+
+two-sample KS correlated vs gaussian sample: 0.0034
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed5.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0039 | +0.028 | -0.001 | 74800 |
+| heavy_tail | 0.0168 | +18.436 | +0.136 | 74800 |
+| correlated | 0.0032 | +0.025 | +0.004 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0154
+
+two-sample KS correlated vs gaussian sample: 0.0049
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed6.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0044 | +0.019 | -0.010 | 74800 |
+| heavy_tail | 0.0156 | +1.996 | +0.014 | 74800 |
+| correlated | 0.0030 | +0.011 | -0.005 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0182
+
+two-sample KS correlated vs gaussian sample: 0.0065
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed7.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0025 | +0.020 | -0.003 | 74800 |
+| heavy_tail | 0.0146 | +2.145 | -0.064 | 74800 |
+| correlated | 0.0042 | -0.011 | -0.011 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0157
+
+two-sample KS correlated vs gaussian sample: 0.0058
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed8.npz
+## Truncation-noise normality under three priors (187 in-scope rooms x 50 realizations x 8 sensors)
+
+| prior | pooled KS D vs N(0,1) | excess kurtosis | skew | N |
+|---|---|---|---|---|
+| gaussian | 0.0025 | -0.018 | +0.014 | 74800 |
+| heavy_tail | 0.0154 | +3.836 | +0.047 | 74800 |
+| correlated | 0.0050 | +0.021 | +0.020 | 74800 |
+
+two-sample KS heavy_tail vs gaussian sample: 0.0166
+
+two-sample KS correlated vs gaussian sample: 0.0065
+wrote data/experiments/appendix/seeds/prior_tails_qq_seed9.npz
+# Single-draw probe: delta(|s|) of the median-over-rooms curve per seed
+
+- T=1 gaussian: probe p* 1.0, 1.3, 1.1, 1.1, 1.0, 1.3, 0.9, 0.9, 1.0, 1.2; d(|s|) per seed 0.72%, 1.41%, 0.06%, 0.00%, 1.18%, 0.28%, 1.12%, 0.68%, 0.51%, 0.03% -> range [0.0%, 1.4%]
+- T=1 heavy_tail: probe p* 0.8, 0.9, 0.9, 1.0, 0.9, 1.2, 1.2, 1.0, 1.1, 1.0; d(|s|) per seed 1.77%, 2.28%, 1.38%, 0.39%, 0.11%, 0.11%, 0.38%, 0.28%, 0.03%, 0.71% -> range [0.0%, 2.3%]
+- T=1 correlated: probe p* 1.4, 1.0, 1.0, 1.0, 0.9, 1.0, 1.1, 1.0, 1.0, 1.3; d(|s|) per seed 0.62%, 0.25%, 0.16%, 0.31%, 1.03%, 0.29%, 0.09%, 0.27%, 0.75%, 0.70% -> range [0.1%, 1.0%]
+- T=100 gaussian: probe p* 0.7, 0.9, 0.7, 0.9, 0.5, 0.9, 0.8, 0.7, 0.9, 0.6; d(|s|) per seed 2.18%, 4.98%, 5.16%, 7.47%, 4.80%, 1.99%, 6.94%, 5.65%, 0.52%, 8.90% -> range [0.5%, 8.9%]
+- T=100 heavy_tail: probe p* 0.3, 0.6, 0.7, 0.8, 0.5, 0.6, 0.6, 0.6, 0.6, 1.0; d(|s|) per seed 1.89%, 6.32%, 5.84%, 5.60%, 4.66%, 8.27%, 11.97%, 4.25%, 8.77%, 1.29% -> range [1.3%, 12.0%]
+- T=100 correlated: probe p* 0.8, 0.5, 0.9, 0.5, 0.5, 0.9, 0.8, 0.9, 0.8, 1.0; d(|s|) per seed 3.26%, 4.06%, 3.63%, 10.35%, 12.65%, 3.37%, 3.99%, 1.98%, 4.49%, 3.85% -> range [2.0%, 12.7%]
+wrote data/experiments/appendix/seeds/single_draw_seed_spread_n10.npz (124s)

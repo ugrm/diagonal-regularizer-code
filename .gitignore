@@ -1,0 +1,25 @@
+# Downloaded or regenerated data (see README: make download-data / make regenerate)
+data/modal
+data/modal/
+data/rooms/
+data/fdtd/
+data/experiments_repro/
+
+# Generated outputs
+figures/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Downloaded dataset archives
+*.tar.gz
+SHA256SUMS

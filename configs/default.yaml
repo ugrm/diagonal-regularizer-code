@@ -1,0 +1,66 @@
+dataset:
+  n_rooms: 1000
+  n_mic_configs: 5
+  segment_range: [3, 10]
+  side_range: [2.0, 8.0]        # meters
+  kappa_range: [0.1, 10.0]      # Robin BC coefficient
+  seed: 42
+
+eigensolve:
+  k_max: 100                    # Compute up to 100 modes
+  freq_max: 1000                # Hz — already gives median K=271 at 1000Hz
+  elements_per_wavelength: 8.0  # 827/999 rooms have K>=100 at fcut=1000Hz
+
+microphones:
+  m_max: 16                     # Place 16 mics per config
+  mic_wall_margin: 0.3          # meters
+  mic_source_margin: 0.5        # meters
+  source_wall_margin: 0.5       # meters
+
+simulation:
+  speed_of_sound: 343.0
+  damping: 5.1                  # gamma in s^-1
+  noise_frac: 0.01              # 1% measurement noise (heat/membrane)
+
+evaluation:
+  k_values: [25, 50, 100]      # Slice from k_max=100
+  m_values: [4, 8, 16]         # Slice from m_max=16
+  p_grid_min: 0.0
+  p_grid_max: 6.0
+  p_grid_step: 0.1             # 61 values
+  t_values: [1, 5, 10, 20, 50, 100, 200, 500, 1000, 2100]
+  lambda_grid: [1.0e-6, 1.0e-4, 1.0e-2, 1.0e-1, 1.0, 10.0, 100.0, 1.0e+3, 1.0e+4, 1.0e+6, 1.0e+8, 1.0e+10]
+  n_mic_trials: 20              # Random mic subsets for M < m_max
+
+rooms:
+  n_train: 800
+  n_val: 200
+  val_start: 800
+  val_end: 1000
+  skip_first_snaps: 5
+  skip_last_snaps: 2
+
+blacklist:
+  scenes: [905, 913, 921]       # Legacy dataset (data/modal/) — different rooms than new dataset
+  # New dataset (data/rooms/): degenerate rooms filtered via manifest status field, not blacklist
+
+berry:
+  alpha: 0.05                   # KS test significance level
+
+training:
+  epochs: 1000
+  lr: 0.001
+  scheduler: cosine_annealing
+  batch_size: 32
+
+paths:
+  data_root: data/
+  rooms_dir: data/rooms/
+  fdtd_dir: data/fdtd/
+  modal_root: data/modal/
+  scenes_dir: data/scenes/
+  experiments_dir: data/experiments/
+  mic_subsets: data/mic_subsets.npz
+  diagnostics_dir: data/diagnostics/
+  checkpoints_dir: checkpoints/
+  figures_dir: figures/

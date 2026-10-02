@@ -1,0 +1,15 @@
+batch_size: 32
+checkpoint_dir: checkpoints/m3_hypernet_n800_T1_s44
+config: configs/default.yaml
+epochs: 500
+fdtd_root: null
+k: 50
+layout: null
+lr: 0.001
+m: 8
+modal_root: null
+model: m3_hypernet
+n_train_rooms: 800
+samples: 8000
+seed: 44
+t_value: '1'

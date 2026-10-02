@@ -1,0 +1,38 @@
+# Appendix F/G over 10 fixed seeds: median [min, max] across seeds
+
+T41 KS gap, one-sample vs N(0,1), max(t3, corr): 0.016 [0.014, 0.017]
+T41 KS gap, two-sample vs Gaussian sample:       0.016 [0.015, 0.018]
+T41 single-draw delta T=100 Gaussian per seed (%): 2.18, 4.98, 5.16, 7.47, 4.80, 1.99, 6.94, 5.65, 0.52, 8.90 -> median 5.1, range 0.5-8.9, max/min 17.1x
+   single-draw gaussian   T=  1: 0.60 [0.00, 1.41] %
+   single-draw gaussian   T=100: 5.07 [0.52, 8.90] %
+   single-draw heavy_tail T=  1: 0.39 [0.03, 2.28] %
+   single-draw heavy_tail T=100: 5.72 [1.29, 11.97] %
+   single-draw correlated T=  1: 0.30 [0.09, 1.03] %
+   single-draw correlated T=100: 3.92 [1.98, 12.65] %
+
+T27/T42 flatness generic / rectangle:
+  K_total= 50: 2.335 [2.282, 2.352] / 2.244 [2.088, 2.638]
+  K_total= 75: 1.327 [1.321, 1.347] / 1.374 [1.344, 1.430]
+  K_total=100: 1.304 [1.292, 1.316] / 1.304 [1.269, 1.386]
+  K_total=150: 1.286 [1.273, 1.296] / 1.303 [1.259, 1.340]
+  K_total=200: 1.287 [1.271, 1.295] / 1.309 [1.243, 1.344]
+  K_total=300: 1.278 [1.270, 1.289] / 1.291 [1.215, 1.336]
+T42 K=300 difference: 0.039 [0.004, 0.067] | rectangle median inside generic IQR (of six), per seed: [np.int64(5), np.int64(5), np.int64(5), np.int64(4), np.int64(4), np.int64(5), np.int64(5), np.int64(5), np.int64(4), np.int64(5)]
+
+T28 3D column (2D fixed):
+  landscape ratio T=1: 3D 1.089 [1.071, 1.096]  (2D 1.265); 3D flatter than 2D in 10/10 seeds
+  landscape ratio T=100: 3D 1.138 [1.110, 1.163]  (2D 1.280); 3D flatter than 2D in 10/10 seeds
+  landscape ratio T=1000: 3D 1.529 [1.461, 1.648]  (2D 1.452); 3D flatter than 2D in 0/10 seeds
+  cost T=100: 1.03 [0.69, 1.43] pp (1.45 [0.98, 1.93] %)
+  cost T=1000: 1.57 [1.39, 2.10] pp (13.58 [10.49, 17.65] %)
+
+T42 3D worst cell per seed, relative % (same cell's abs pp) / largest abs pp:
+  Tle100: 3.41 [2.65, 3.84] % (2.77 [1.84, 3.26] pp); largest abs 2.77 [1.91, 3.26] pp
+  T1000: 20.37 [15.57, 34.17] % (1.69 [1.23, 3.14] pp); largest abs 2.85 [1.80, 4.94] pp
+  per-cell median over seeds, worst cell: T<=100 2.73 %, T=1000 18.65 %
+
+G.5: 2D worst T<=100 27.5 %, T=1000 34.8 %
+  2D/3D worst ratio T<=100: 8.1 [7.2, 10.4] | T=1000: 1.71 [1.02, 2.23]
+  all 8 cells inside the 2D range, seeds: 10 / 10
+
+wrote data/experiments/appendix/seeds/multi_seed_summary.npz
