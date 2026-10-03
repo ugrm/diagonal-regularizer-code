@@ -55,7 +55,7 @@ Four appendix scripts also need the full eigenfunctions on the mesh (`make rooms
 | learned models (§6, App. D) | `make train` | 2–3 days (GPU) | `sweep_P_eval.npz`, LIR results |
 | microphone signals | `make fdtd-signals` | about 2 h (GPU) | the archive's signals |
 
-`make check` runs `tests/test_locked_numbers.py` (main text) and one checker per appendix group (`scripts/appendix/{A_B,E,F_G}/check_*.py`). Each prints `table | row | printed | recomputed | status`. Each appendix folder has a `README.md` with the script order, run times and what each script reproduces.
+`make check` runs `tests/test_locked_numbers.py` (main text) and one checker per appendix group (`scripts/appendix/{A_B,C_D,E,F_G}/check_*.py`; `C_D` also covers the main-text prose and the remaining tables). Each prints `table | row | printed | recomputed | status`. Each appendix folder has a `README.md` with the script order, run times and what each script reproduces.
 
 Outputs of the long reruns go to `data/experiments_repro/` or `data/experiments/appendix/`, so the shipped results stay untouched for comparison.
 

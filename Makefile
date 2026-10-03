@@ -46,6 +46,7 @@ check-appendix:
 	$(CPU) $(PYTHON) scripts/appendix/A_B/check_A_B.py
 	$(CPU) $(PYTHON) scripts/appendix/E/check_E.py
 	$(CPU) $(PYTHON) scripts/appendix/F_G/check_F_G.py
+	$(CPU) $(PYTHON) scripts/appendix/C_D/check_C_D.py
 
 # ─── From the raw dataset ────────────────────────────────────────────────────
 reproduce-core:
