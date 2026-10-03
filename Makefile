@@ -2,7 +2,7 @@ PYTHON  ?= python
 CONFIG  ?= configs/default.yaml
 WORKERS ?= 16
 # Release that holds the dataset archive (see README, "Data")
-DATA_URL ?= https://github.com/ugrm/diagonal-regularizer_code/releases/download/v1.0
+DATA_URL ?= https://github.com/ugrm/diagonal-regularizer-code/releases/download/v1.0
 DATA_PARTS := modal_dataset_v1_val modal_dataset_v1_train_a modal_dataset_v1_train_b
 # Full eigenfunctions on the mesh, needed by four appendix scripts (make rooms)
 export DR_ROOMS ?= data/rooms

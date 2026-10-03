@@ -79,11 +79,11 @@ tests/           main-text number check
 ## Citation
 
 ```bibtex
-@inproceedings{han2026learning,
-  title     = {Why Learning Rediscovers the Closed-Form Diagonal Regularizer},
-  author    = {Han, Jeahn and Kim, Pyojin},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2026}
+@article{han2026learning,
+  title={Why Learning Rediscovers the Closed-Form Diagonal Regularizer},
+  author={Han, Jeahn and Kim, Pyojin},
+  journal={arXiv preprint arXiv:2609.09656},
+  year={2026}
 }
 ```
 
